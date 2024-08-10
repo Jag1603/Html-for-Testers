@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Webpage with Embed</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        .media-section {
+            margin-bottom: 30px;
+        }
+        h1 {
+            text-align: center;
+        }
+        audio, video, embed {
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Multimedia Webpage</h1>
+
+        <!-- Audio Section using audio element -->
+        <div class="media-section">
+            <h2>Audio Player (audio element)</h2>
+            <audio controls>
+                <source src="C:\\Users\jagad\\Downloads\\sample-6s.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <p>Playing sample audio file using the <code>audio</code> element.</p>
+        </div>
+
+        <!-- Audio Section using embed element -->
+        <div class="media-section">
+            <h2>Audio Player (embed element)</h2>
+
+
+            <embed src="C:\\Users\\jagad\\Downloads\\sample-9s.mp3" type="audio/mp3" height="30">
+            <p>Playing sample audio file using the <code>embed</code> element.</p>
+        </div>
+
+        <!-- Video Section -->
+        <div class="media-section">
+            <h2>Video Player</h2>
+            <video controls>
+                <source src="C:\\Users\\jagad\\Downloads\\sample-20s.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+            <p>Playing sample video file.</p>
+        </div>
+        <div class="media-section">
+            <h2>Video Player</h2>
+         
+                <embed src="C:\\Users\\jagad\\Downloads\\sample-20s.mp4" type="video/mp4">
+                Your browser does not support the video element.
+    
+            <p>Playing sample video file.</p>
+        </div>
+    </div>
+</body>
+</html>

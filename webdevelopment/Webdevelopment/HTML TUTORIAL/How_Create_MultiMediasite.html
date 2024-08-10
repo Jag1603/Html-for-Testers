@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multimedia Webpage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    section {
+      margin-bottom: 20px;
+    }
+    video, canvas, iframe {
+      display: block;
+      max-width: 100%;
+      margin: auto;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    img {
+      max-width: 100%;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    .math {
+      border: 1px solid #ddd;
+      padding: 10px;
+      border-radius: 4px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+    svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .object {
+      border: 1px solid #ddd;
+      display: block;
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Multimedia Showcase</h1>
+
+    <!-- Audio -->
+    <section>
+      <h2>Audio Example</h2>
+      <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <!-- Canvas -->
+    <section>
+      <h2>Canvas Example</h2>
+      <canvas id="myCanvas" width="400" height="200" style="border:1px solid #ddd;"></canvas>
+      <script>
+        var canvas = document.getElementById('myCanvas');
+        var ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#4CAF50';
+        ctx.fillRect(10, 10, 150, 100);
+      </script>
+    </section>
+
+    <!-- Embed -->
+    <section>
+      <h2>Embed Example</h2>
+      <embed src="https://www.w3.org/2002/08/atom1" type="application/xml" width="600" height="400">
+    </section>
+
+    <!-- iFrame -->
+    <section>
+      <h2>iFrame Example</h2>
+      <iframe src="https://www.example.com" width="600" height="400" frameborder="0"></iframe>
+    </section>
+
+    <!-- Image -->
+    <section>
+      <h2>Image Example</h2>
+      <img src="https://via.placeholder.com/600x400" alt="Placeholder Image">
+    </section>
+
+    <!-- Math -->
+    <section>
+      <h2>MathML Example</h2>
+      <div class="math">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <msup>
+            <mi>x</mi>
+            <mn>2</mn>
+          </msup>
+          <mo>+</mo>
+          <mn>1</mn>
+        </math>
+      </div>
+    </section>
+
+    <!-- Object -->
+    <section>
+      <h2>Object Example</h2>
+      <object data="https://www.w3.org/Graphics/SVG/SVG_Welcome.svg" type="image/svg+xml" class="object">
+        Your browser does not support SVG.
+      </object>
+    </section>
+
+    <!-- SVG -->
+    <section>
+      <h2>SVG Example</h2>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+      </svg>
+    </section>
+
+    <!-- Video -->
+    <section>
+      <h2>Video Example</h2>
+      <video controls>
+        <source src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+    </section>
+  </div>
+</body>
+</html>

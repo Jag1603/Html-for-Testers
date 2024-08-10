@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links Example</title>
+    <link rel="stylesheet" href="CSS_Tutorial\Css_Demo.css"> <!-- Link to an external CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .external-links, .internal-links {
+            margin-bottom: 20px;
+        }
+        .external-links a {
+            display: block;
+            margin: 5px 0;
+        }
+        .internal-links a {
+            display: inline-block;
+            margin: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hyperlinks Example</h1>
+
+    <!-- External Links -->
+    <div class="external-links">
+        <h2>External Links</h2>
+        <a href="https://www.facebook.com" target="_blank">Visit Facebook (New Tab)</a>
+        <a href="https://www.youtube.com" target="_blank">Visit YouTube (New Tab)</a>
+        <a href="https://www.yahoo.com" target="_blank">Visit Yahoo (New Tab)</a>
+        <a href="https://www.instagram.com" target="_blank">Visit Instagram (New Tab)</a>
+    </div>
+
+    <!-- Internal Links -->
+    <div class="internal-links">
+        <h2>Internal Links</h2>
+        <a href="#section1">Go to Section 1</a>
+        <a href="#section2">Go to Section 2</a>
+        <a href="#section3">Go to Section 3</a>
+    </div>
+
+    <!-- Sections for Internal Links -->
+    <div id="section1">
+        <h2>Section 1</h2>
+        <p>This is Section 1. You can navigate back to the <a href="#top">top</a>.</p>
+    </div>
+
+    <div id="section2">
+        <h2>Section 2</h2>
+        <p>This is Section 2. You can navigate back to the <a href="#top">top</a>.</p>
+    </div>
+
+    <div id="section3">
+        <h2>Section 3</h2>
+        <p>This is Section 3. You can navigate back to the <a href="#top">top</a>.</p>
+    </div>
+
+    <!-- Back to Top Link -->
+    <div id="top">
+        <a href="#top">Back to Top</a>
+    </div>
+</body>
+</html>

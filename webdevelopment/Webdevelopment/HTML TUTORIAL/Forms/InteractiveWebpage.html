@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Elements Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .menu-container {
+            margin-top: 20px;
+        }
+        menu {
+            display: block;
+            list-style-type: none;
+            padding: 0;
+        }
+        menu li {
+            margin: 5px 0;
+        }
+        kbd {
+            background-color: #eee;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            padding: 2px 4px;
+            font-size: 0.85em;
+            box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+        }
+        time {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HTML5 Elements Demonstration</h1>
+
+        <!-- Details and Summary -->
+        <div class="form-group">
+            <details>
+                <summary>Click to expand</summary>
+                <p>This section reveals more information when expanded. It can be used for displaying extra content that the user might want to see.</p>
+            </details>
+        </div>
+
+        <!-- Command and Menu -->
+        <div class="form-group menu-container">
+            <p>Available commands:</p>
+            <menu>
+                <li><command type="command">Save</command></li>
+                <li><command type="command">Open</command></li>
+                <li><command type="command">Delete</command></li>
+            </menu>
+        </div>
+
+        <!-- Keyboard Input -->
+        <div class="form-group">
+            <p>To copy text, use the <kbd>Ctrl</kbd> + <kbd>C</kbd> keyboard shortcut.</p>
+        </div>
+
+        <!-- Time Element -->
+        <div class="form-group">
+            <p>Event scheduled for: <time datetime="2024-08-15T14:00">August 15, 2024, 2:00 PM</time></p>
+        </div>
+    </div>
+</body>
+</html>

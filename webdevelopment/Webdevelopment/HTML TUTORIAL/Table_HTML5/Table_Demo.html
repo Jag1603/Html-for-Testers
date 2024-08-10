@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Group Information</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #cb1b2d;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        caption {
+            font-size: 1.5em;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Blood Group Compatibility Information</caption>
+        <colgroup>
+            <col style="width: 30%;">
+            <col style="width: 35%;">
+            <col style="width: 35%;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Blood Group</th>
+                <th>Compatible Donors</th>
+                <th>Compatible Recipients</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>A+</td>
+                <td>A+, A-, O+, O-</td>
+                <td>A+, A-, AB+, AB-</td>
+            </tr>
+            <tr>
+                <td>B+</td>
+                <td>B+, B-, O+, O-</td>
+                <td>B+, B-, AB+, AB-</td>
+            </tr>
+            <tr>
+                <td>AB+</td>
+                <td>AB+, AB-, A+, A-, B+, B-, O+, O-</td>
+                <td>AB+</td>
+            </tr>
+            <tr>
+                <td>O+</td>
+                <td>O+, O-</td>
+                <td>O+, A+, B+, AB+</td>
+            </tr>
+            <tr>
+                <td>A-</td>
+                <td>A-, O-</td>
+                <td>A-, A+, AB-, AB+</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Ensure compatibility before transfusion.</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

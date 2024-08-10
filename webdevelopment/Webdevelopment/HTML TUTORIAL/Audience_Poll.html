@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tamil Actors Audience Poll</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    .container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    nav {
+      margin-bottom: 20px;
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      border-radius: 4px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .poll-section {
+      margin-bottom: 20px;
+    }
+    .poll-section label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    .poll-section mark {
+      background-color: #ffeb3b;
+      color: #000;
+      padding: 2px 5px;
+    }
+    ol {
+      padding-left: 20px;
+    }
+    .meter {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      background-color: #dddddd;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .meter span {
+      display: block;
+      height: 20px;
+      background-color: #4CAF50;
+      text-align: center;
+      line-height: 20px;
+      color: rgb(255, 255, 255);
+    }
+    small {
+      display: block;
+      margin-top: 5px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h1>Tamil Actors Audience Poll</h1>
+
+    <div class="poll-section">
+      <label for="poll">Vote for Your Favorite Tamil Actor:</label>
+      <ol>
+        <li><span>Rajinikanth</span></li>
+        <li><span>Kamal Haasan</span></li>
+        <li><span>Vijay</span></li>
+        <li><span>Ajith Kumar</span></li>
+        <li><span>Suriya</span></li>
+      </ol>
+    </div>
+
+    <div class="poll-section">
+      <label>Current Poll Results:</label>
+      <div class="meter">
+        <span style="width: 60%;">Rajinikanth - 30%</span>
+      </div>
+      <div class="meter">
+        <span style="width: 55%;">Kamal Haasan - 25%</span>
+      </div>
+      <div class="meter">
+        <span style="width: 50%;">Vijay - 20%</span>
+      </div>
+      <div class="meter">
+        <span style="width: 45%;">Ajith Kumar - 15%</span>
+      </div>
+      <div class="meter">
+        <span style="width: 40%;">Suriya - 10%</span>
+      </div>
+      <small>Poll conducted on 1st August 2024</small>
+    </div>
+  </div>
+</body>
+</html>

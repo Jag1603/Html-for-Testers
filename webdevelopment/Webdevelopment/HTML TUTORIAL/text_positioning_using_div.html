@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Positioning with Div</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            border: 2px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .left-align {
+            text-align: left;
+        }
+        .center-align {
+            text-align: center;
+        }
+        .right-align {
+            text-align: right;
+        }
+        .justify-align {
+            text-align: justify;
+        }
+        .absolute-position {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        .relative-position {
+            position: relative;
+            top: 20px;
+            left: 30px;
+        }
+        .fixed-position {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            border: 1px dashed #888;
+            padding: 10px;
+        }
+        .flex-item {
+            border: 1px solid #ddd;
+            padding: 10px;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Text Positioning with Div</h1>
+
+    <div class="container">
+        <h2>1. Text Alignment</h2>
+        <div class="left-align">This text is left-aligned.</div>
+        <div class="center-align">This text is centered.</div>
+        <div class="right-align">This text is right-aligned.</div>
+        <div class="justify-align">This text is justified. Justified text aligns the text evenly along the left and right margins, adding extra space between words as necessary.</div>
+    </div>
+
+    <div class="container">
+        <h2>2. Positioning</h2>
+        <div class="absolute-position">
+            This text is positioned absolutely. It is placed 50px from the top and 50px from the left of the nearest positioned ancestor.
+        </div>
+        <div class="relative-position">
+            This text is positioned relatively. It is moved 20px down and 30px to the right from its normal position.
+        </div>
+        <div class="fixed-position">
+            This text is positioned fixed. It is always 20px from the bottom and 20px from the right of the viewport, regardless of 
